@@ -8,7 +8,12 @@ const methodOverride = require('method-override');
 const campgrounds = require('./routes/campground');
 const reviews = require('./routes/reviews');
 
-mongoose.connect('mongodb://localhost:27017/yelp-camp', { useNewUrlParser: true, useCreateIndex: true, useUnifiedTopology: true });
+mongoose.connect('mongodb://localhost:27017/yelp-camp', {
+    useNewUrlParser: true,
+    useCreateIndex: true,
+    useUnifiedTopology: true,
+    useFindAndModify: false
+});
 
 const db = mongoose.connection;
 db.on("error", console.error.bind(console, "connection error:"));
@@ -26,10 +31,7 @@ app.set('views', path.join(__dirname, 'views'));
 //parse res.send(req.body) because it is empty by default. 
 app.use(express.urlencoded({ extended: true }));
 app.use(methodOverride('_method'));//override post route with put
-
-
-
-
+app.use(express.static(path.join(__dirname, 'public')));
 
 
 app.use('/campgrounds', campgrounds);

@@ -15,6 +15,7 @@ router.route('/')
     // .post(isLoggedIn, validateCampground, catchAsync(campgrounds.createCampground));
     .post(upload.array('image'), (req, res) => {
         console.log(req.body, req.files);
+        res.send("It worked!");
     });
 
 router.get('/new', isLoggedIn, campgrounds.renderNewForm);

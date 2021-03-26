@@ -29,8 +29,21 @@ body {
   border-bottom-color: white;
 }
 
-.btn-secondary,
+/* .btn-secondary,
 .btn-secondary:hover {
   color: #333;
   text-shadow: none;
+} */
+
+.view-button {
+  color: #333;
+  background-color: whitesmoke;
+  text-shadow: none;
+  border: 1px solid white;
+}
+
+.view-button:hover {
+  color: #e8f5e9;
+  background-color: #388e3c;
+  /* border: 1.5px solid #e8f5e9; */
 }

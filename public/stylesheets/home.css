@@ -39,11 +39,11 @@ body {
   color: #333;
   background-color: whitesmoke;
   text-shadow: none;
-  border: 1px solid white;
+  border: none;
 }
 
 .view-button:hover {
   color: #e8f5e9;
-  background-color: #388e3c;
-  /* border: 1.5px solid #e8f5e9; */
+  background-color: rgba(0, 151, 167, 0.2);
+  border: none;
 }

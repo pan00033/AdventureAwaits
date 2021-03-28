@@ -15,5 +15,8 @@ A full stack web campground rating application where users can create their own 
   * AJAJ
   * Cloudinary(For image storage)
   * Heroku(Hosting)
-## Middleware 
-  * 
+### Middleware 
+  * [Crypto](https://nodejs.org/api/crypto.html#crypto_crypto)(For password encryption)
+  * [Helmet](https://helmetjs.github.io/)(For security purposes such as SQL injection, Cross Site Scripting, etc.)
+  * [Passport-Local](https://github.com/jaredhanson/passport-local#passport-local)(For User Authentication)
+  

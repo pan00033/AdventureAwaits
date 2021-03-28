@@ -21,6 +21,6 @@ A full stack web campground rating application where users can create their own 
   * [Passport-local](https://github.com/jaredhanson/passport-local#passport-local)(For User Authentication)
   * [Express-session](https://github.com/expressjs/session#express-session)(Saving client data using session ID)
   * [Method-override](https://github.com/expressjs/method-override#method-override)(Allowing use of HTTP verbs such as 'DELETE' and 'PUT')
-  * [Connect-flash](https://github.com/jaredhanson/connect-flash)(Rendering message usually with redirecting. e.g. Log in success)
+  * [Connect-flash](https://github.com/jaredhanson/connect-flash)(Rendering message usually with redirecting. e.g. "Log in success")
   * [Multer-storage-cloudinary](https://github.com/affanshahid/multer-storage-cloudinary)
   

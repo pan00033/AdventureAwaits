@@ -11,6 +11,7 @@ A full stack web campground rating application where users can create their own 
 ## Back-end
   * Node.js(Express)
   * MongoDB
+  * MongoDB Atlas(Deploy MongoDB cluster in the cloud.)
   * Mongoose
   * AJAJ
   * Cloudinary(For image storage)

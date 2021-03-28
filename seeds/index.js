@@ -14,12 +14,12 @@ db.once("open", () => {
 const sample = array => array[Math.floor(Math.random() * array.length)];
 
 const seedDB = async () => {
-    // await Campground.deleteMany({});
+    await Campground.deleteMany({});
     for (let i = 0; i < 500; i++) {
         const random1000 = Math.floor(Math.random() * 1000);
         const price = Math.floor(Math.random() * 20) + 10;
         const camp = new Campground({
-            author: '6058f418c47d9b27e852be6b',
+            author: '6060b5c89c079c35c0995366',
             location: `${cities[random1000].city}, ${cities[random1000].state}`,
             title: `${sample(descriptors)} ${sample(places)}`,
             description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis mollitia culpa eaque. Illum deleniti magni sequi iste nostrum debitis amet odit, aliquam architecto ut libero officia corporis dolor quisquam deserunt.',

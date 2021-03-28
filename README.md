@@ -1,5 +1,6 @@
 # AdventureAwaits
-A full stack web campground rating application where users can create their own campgrounds, view and comment on others' campgrounds.
+A full-stack web campground rating application where users can create their own campgrounds, view and comment on others' campgrounds.
+# Live Demo: https://guarded-forest-27338.herokuapp.com/
 # Tech Stack
 ## Front-end
   * HTML5

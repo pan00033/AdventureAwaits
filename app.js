@@ -24,7 +24,7 @@ const reviewRoutes = require('./routes/reviews');
 
 const MongoDBStore = require('connect-mongo');
 
-const dbUrl = 'mongodb://localhost:27017/yelp-camp';
+const dbUrl = process.env.DB_URL || 'mongodb://localhost:27017/yelp-camp';
 mongoose.connect(dbUrl, {
     useNewUrlParser: true,
     useCreateIndex: true,
@@ -51,18 +51,16 @@ app.use(methodOverride('_method'));//override post route with put
 app.use(express.static(path.join(__dirname, 'public')));
 app.use(mongoSanitize());
 
-
-
-
+const secret = process.env.SECRET || 'thisshouldbeabettersecret!';
 
 const sessionConfig = {
     name: 'session',
-    secret: 'thisshouldbeabettersecret!',
+    secret,
     resave: false,
     saveUninitialized: true,
     store: MongoDBStore.create({
         mongoUrl: dbUrl,
-        secret: 'thisshouldbeabettersecret!',
+        secret,
         touchAfter: 24 * 60 * 60
     }),
     cookie: {
